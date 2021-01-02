@@ -17,7 +17,7 @@ console.log("concat: " + str1.concat(str2));
 console.log("endsWith: " + str1.endsWith(name));
 
 //indexOf
-console.log("indexOf: " + str1.indexOf("a"));
+console.log("indexOf: " + str1.indexOf("r"));
 
 //lastIndexOf
 //concat.log("lastIndexOf: " + str1.lastIndexOf("Name"));
@@ -45,3 +45,24 @@ console.log("toUpprCase: " + str1.toUpperCase());
 
 //lowerCase
 console.log("toLowerCase: " + str1.toLowerCase());
+
+
+//################################################################################
+// First latter Uppercase and then lowercase
+
+input
+let userName = prompt("What Is Your Name");
+//to upper case
+let userNameUpparCase = userName.toUpperCase();
+// to lower case 
+let userNameLowerCase = userName.toLowerCase();
+//slice the first latter
+let firstLatter = userNameUpparCase.slice(0,1);
+//total lenght
+let totalLength = userName.length;
+//to get charecter after first latter 
+let afterFirstLatter = userNameLowerCase.slice(1, totalLength);
+//get alart
+alert("Hello: " + firstLatter + afterFirstLatter);
+
+
